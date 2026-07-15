@@ -1,0 +1,11 @@
+# Core Phase 1 dependencies
+pandas>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+seaborn>=0.13.0
+sqlalchemy>=2.0.0
+pymysql>=1.1.0
+python-dotenv>=1.0.0
+
+# Notebook support in Cursor / VS Code (avoids full JupyterLab long-path install on Windows)
+ipykernel>=6.25.0

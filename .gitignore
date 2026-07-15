@@ -1,0 +1,51 @@
+# Secrets — never commit
+.env
+.env.local
+.env.*.local
+*.pem
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
+
+# Generated / local data products
+dataset/cleaned_sentimentdataset.csv
+
+# ML artifacts (regenerate with phase2 pipeline)
+phase2/artifacts/*
+!phase2/artifacts/.gitkeep
+
+# Alert draft logs (may contain message content)
+phase3/logs/*
+!phase3/logs/.gitkeep
+
+# Streamlit / local runtime
+.streamlit/secrets.toml
+*.log
